@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/register.css">
+    <title>Registro</title>
+
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <form>
+              <input type="text" placeholder="Buscar...">
+              <button type="submit">Buscar</button>
+            </form>
+          </li>
+          
+        </ul>
+      </nav>
+
+    <header>
+        <img src="Imagenes\Vet1.png" alt="Logo del salón para mascotas">
+        <h1>Salón para Mascotas</h1>
+    </header>
+
+    <div>
+        
+
+        <div class="formulario">
+
+            <h2>Registra una nueva mascota</h2>
+
+            <input type="text" placeholder="Nombre del cliente" id="txtCliente">
+            <input type="text" placeholder="Numero de celular" id="txtCelular">
+            <input type="text" placeholder="Ingresa el nombre de la mascota" id="txtNombre">
+            <input type="text" placeholder="Ingresa la raza de la mascota" id="txtRaza">
+
+            <select id="txtGenero">
+                <option value=""disable selected> Genero de la mascota </option>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+            </select>
+            
+            <select id="vacRabia">
+                <option value=""disable selected>¿Cuenta con la vacuna para la rabia? </option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+
+            <select id="selServicio">
+                <option value=""disable selected>--Selecciona un servicio-- </option>
+                <option value="Vacunas">Vacunas</option>
+                <option value="Grooming">Grooming</option>
+            </select>
+          
+
+            
+
+            <button onclick="Registro();">Registrar</button>
+
+    </div>
+
+        <h2>Mascotas registradas</h2>
+
+        <div id="mascotas">
+            <!--Aqui se insertaran las mascotas-->
+            
+
+
+
+        </div>
+
+
+</div>
+    <Script src="scripts/register.js"></script>
+    <Script src="scripts/display.js"></script>
+</body>
+
+<footer>
+    <img class="logof" src="Imagenes\Vet1.png" alt="Este es el logo">
+<span class="GlobalFooter__Copyright__Item--line"> Veterinaria y salon de belleza canina S.A. de C.V
+
+    </span>
+</footer>
+</html>
