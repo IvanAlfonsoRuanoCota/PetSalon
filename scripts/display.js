@@ -1,7 +1,7 @@
 function displayCards(){
     //declaracion de variables
     const DIV = document.getElementById("mascotas");
-    
+    total= 0;
     let card= "";
 
     //recorrer el arreglo pets[]
@@ -19,10 +19,11 @@ function displayCards(){
         <p> Servicio: ${pets[i].servicio}</p>
         </div>
        `;
-       contador=i;
+       total += i;
+       
       
     }
-    let contadorElement = document.getElementById("contador");
+    
 
 // Set an initial value for the counter
     //crear el template de la tarjeta
